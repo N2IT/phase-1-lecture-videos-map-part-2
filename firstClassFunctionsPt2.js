@@ -26,30 +26,30 @@ let books = [
     }
 ]
 
-function printReport(foo) {
-    console.log(foo(books))
-}
+// function printReport(foo) {
+//     console.log(foo(books))
+// }
 
-function totalInventory(array){
-        let total = 0
-    for (let item of array) {
-        total += item.inventory
-    }
+// function totalInventory(array){
+//         let total = 0
+//     for (let item of array) {
+//         total += item.inventory
+//     }
 
-    return `Total Inventory: ${total} items`
-}
+//     return `Total Inventory: ${total} items`
+// }
 
-function replenish(array){
-    let replenishList = []
-    for (item of array) {
-        if(item.inventory<3) {
-            replenishList.push(item.title)
-        }
+// function replenish(array){
+//     let replenishList = []
+//     for (item of array) {
+//         if(item.inventory<3) {
+//             replenishList.push(item.title)
+//         }
 
-    }
+//     }
     
-    return `Place order for ${replenishList.join(', ')}`
-}
+//     return `Place order for ${replenishList.join(', ')}`
+// }
 
-printReport(totalInventory)
-printReport(replenish)
+// printReport(totalInventory)
+// printReport(replenish)
